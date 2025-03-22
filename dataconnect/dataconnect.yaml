@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "privacy-policy"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "privacy-policy-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
